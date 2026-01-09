@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Student Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Student Portal</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="home" class="hero">
+            <h2>Welcome to Flask Student Portal</h2>
+            <p>A modern web application built with Flask</p>
+            <button id="helloBtn" class="btn">Click Me</button>
+        </section>
+
+        <section id="about" class="content">
+            <h3>About This Application</h3>
+            <p>This Flask application demonstrates:</p>
+            <ul>
+                <li>Basic routing and templates</li>
+                <li>API endpoints with JSON responses</li>
+                <li>Static file serving (CSS, JavaScript)</li>
+                <li>Configuration management</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h3>Send Us a Message</h3>
+            <form id="contactForm" class="form">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send</button>
+            </form>
+            <p id="response"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

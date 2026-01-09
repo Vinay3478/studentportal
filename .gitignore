@@ -1,0 +1,20 @@
+# Student Portal - Development Notes
+
+This is a Flask-based student portal application.
+
+## Quick Start
+
+1. Create virtual environment: `python3 -m venv venv`
+2. Activate: `source venv/bin/activate`
+3. Install dependencies: `pip install -r requirements.txt`
+4. Run: `python app.py`
+5. Open: `http://localhost:5000`
+
+## Next Steps
+
+- Add database models (SQLAlchemy)
+- Implement user authentication (Flask-Login)
+- Add form validation (Flask-WTF)
+- Create database migrations (Flask-Migrate)
+- Add unit tests
+- Deploy to production
